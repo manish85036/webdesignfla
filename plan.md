@@ -100,10 +100,14 @@ Goal: improve quality, stability, and SEO confidence without changing routes/con
 4. As a search engine, I can discover all routes via sitemap.
 5. As the business owner, I can trust that the redesign didn’t remove any original messaging.
 
-## 3. Next Actions
-1. Create the project scaffold (frontend + backend) and implement Phase 1 POC routes + Helmet.
-2. Confirm trailing slash behavior and meta tags are correct.
-3. Proceed to Phase 2 content migration + final design.
+## 3. Status (after Phase 2 build)
+- Phase 1 (POC): SKIPPED — static marketing redesign, no risky integration. Validated routing + Helmet directly during Phase 2.
+- Phase 2 (V1 build): COMPLETED. All 6 routes implemented, content migrated from original webdesignfla.com, design system applied (navy + cyan), portfolio uses original images via referrerPolicy=no-referrer (28 projects), per-route Helmet meta + canonicals, sitemap.xml + robots.txt served from FastAPI.
+- Testing: testing_agent_v3 ran 43 tests — 42 passed (98%). Only minor issue was a 17px body width overflow at tablet (768px) — fixed with overflow-x:hidden on html/body. No regressions visible.
+
+## 4. Next Actions
+1. Optional Phase 3 polish: SSR/prerender (Vite + react-snap) for max SEO, additional micro-interactions, more project images for portfolio fallbacks.
+2. Optional: replace blocked image filenames (a few of the later portfolio items fall back to gradient cards).
 
 ## 4. Success Criteria
 - All 6 original routes work directly and preserve content.

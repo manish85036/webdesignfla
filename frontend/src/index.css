@@ -11,6 +11,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 code {
