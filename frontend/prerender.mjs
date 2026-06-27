@@ -10,7 +10,18 @@ import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { chromium } from "playwright";
+
+// Use the system-wide playwright browsers path if the default location is empty
+if (!process.env.PLAYWRIGHT_BROWSERS_PATH) {
+  for (const candidate of ["/root/.cache/ms-playwright", "/pw-browsers"]) {
+    if (fs.existsSync(candidate)) {
+      process.env.PLAYWRIGHT_BROWSERS_PATH = candidate;
+      break;
+    }
+  }
+}
+
+const { chromium } = await import("playwright");
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const buildDir = path.join(__dirname, "build");

@@ -19,7 +19,6 @@ function ProjectCard({ item }) {
             alt={item.title}
             loading="lazy"
             decoding="async"
-            referrerPolicy="no-referrer"
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
             onError={() => setImageOk(false)}
           />
