@@ -1,50 +1,30 @@
 [
   {
     "content": "Get design guidelines from design_agent",
-    "status": "in_progress"
+    "status": "completed"
   },
   {
     "content": "Install required frontend packages (react-router, helmet, framer-motion)",
-    "status": "pending"
+    "status": "completed"
   },
   {
-    "content": "Build backend (minimal FastAPI with /health + sitemap)",
-    "status": "pending"
+    "content": "Update backend with /api/health and /sitemap.xml + /robots.txt routes",
+    "status": "completed"
   },
   {
     "content": "Build frontend: Layout, Header, Footer with phone CTA",
-    "status": "pending"
+    "status": "completed"
   },
   {
-    "content": "Build Home page with all original content",
-    "status": "pending"
-  },
-  {
-    "content": "Build Web Design page (/web-design/)",
-    "status": "pending"
-  },
-  {
-    "content": "Build SEO page (/seo/)",
-    "status": "pending"
-  },
-  {
-    "content": "Build Social Media page (/social/)",
-    "status": "pending"
-  },
-  {
-    "content": "Build Portfolio page (/portfolio/) with original images",
-    "status": "pending"
-  },
-  {
-    "content": "Build Privacy Policy page (/privacy-policy/)",
-    "status": "pending"
+    "content": "Build all 6 pages (Home, Web Design, SEO, Social, Portfolio, Privacy)",
+    "status": "completed"
   },
   {
     "content": "Add SEO meta tags per route, sitemap.xml, robots.txt",
-    "status": "pending"
+    "status": "completed"
   },
   {
     "content": "Test responsive design + end-to-end with testing_agent_v3",
-    "status": "pending"
+    "status": "in_progress"
   }
 ]
